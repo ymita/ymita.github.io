@@ -63,10 +63,11 @@ body {
 }
 
 .footer {
-    background-color: #0571B0;
-    color: white;
+    /* background-color: #0571B0;
+    color: white; */
     padding-left: 1em;
-    height: 30px;
+    height: 29px;
+    border-top: 1px solid black;
 }
 
 @media(min-width: 768px) {
