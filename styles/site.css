@@ -1,0 +1,103 @@
+/* カラーパターンはこちらのものを利用しています。 */
+/* https://color.adobe.com/ja/Red-Blue-Diverging-(color-blind-friendly)-color-theme-10983600/ */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+body {
+    /* フォント */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    color: rgb(36, 39, 41);
+}
+
+.header {
+    /* アイコンとナビメニューは縦に並べる */
+    display: flex;
+    flex-direction: column;
+
+    /* アイコンの左側に余白を挿入 */
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* ヘッダをわかりやすくするためにボーダーを挿入 */
+    /* border-bottom: solid red 1px; */
+
+    /* ヘッダーのフォント調整 */
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    
+    /* ヘッダの高さ */
+    height: 85px;
+}
+
+.header-icon {
+    /* アイコンを中央表示 */
+    align-self: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-item {
+    margin-right: 10px;
+}
+.header-nav-item a {
+    text-decoration: none;
+    color: rgb(36, 39, 41);
+}
+.header-nav-item a:hover {
+    text-decoration: none;
+    color: #CA0020;
+}
+
+.main {
+    min-height: calc(100vh - 85px);
+    margin: 0 auto -30px;
+}
+
+.footer {
+    background-color: #0571B0;
+    color: white;
+    padding-left: 1em;
+    height: 30px;
+}
+
+@media(min-width: 768px) {
+
+    .header,
+    .main,
+    .footer {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        flex-direction: row;
+        height: 55px;
+    }
+
+    .header-icon {
+        /* ナビゲーションメニューとの間に余白を挿入 */
+        margin-right: 40px;
+    }
+
+    .header-nav-item {
+        margin-right: 80px;
+        padding-bottom: 4px;
+    }
+
+
+    .main {
+        min-height: calc(100vh - 55px);
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
