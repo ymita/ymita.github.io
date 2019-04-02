@@ -7,6 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AppLab - bio</title>
     <link rel="stylesheet" href="styles/site.css">
+    <style>
+        .bio-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bio-list-item {
+            width: 99%;
+            border: 1px solid lightseagreen;
+            height: 15rem;
+        }
+
+        @media(min-width: 768px) {
+            .bio-list {
+                flex-direction: row;
+            }
+
+            .bio-list-item {
+                width: 33%;
+                border: 1px solid lightseagreen;
+                height: 25rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -16,7 +40,7 @@
                 <img src="./images/ic_launcher.png" alt="">
             </a>
             <div class="header-nav">
-                    <div class="header-nav-item"><a href="./apps.html">Apps</a></div>
+                <div class="header-nav-item"><a href="./apps.html">Apps</a></div>
                 <div class="header-nav-item"><a href="./bio.html">Bio</a></div>
                 <div class="header-nav-item"><a href="./schedule.html">Schedule</a></div>
                 <div class="header-nav-item"><a href="./request.html">Request</a></div>
@@ -24,10 +48,17 @@
         </div>
     </header>
     <main class="main">
-        <div>
-            App Lab...
+        <div class="bio-list">
+            <div class="bio-list-item">
+                Yuu Furugen
+            </div>
+            <div class="bio-list-item">
+                Tatsushi Kiryu
+            </div>
+            <div class="bio-list-item">
+                Yuki Mita
+            </div>
         </div>
-
     </main>
     <footer class="footer">
         <div>
