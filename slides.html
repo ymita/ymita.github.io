@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AppLab - Slides</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <style>
+        .slide-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-list-item {
+            width: 99%;
+            border: 1px solid rgb(4, 112, 175);
+            min-height: 8rem;
+        }
+
+        .slide-description {
+            margin-top: 1rem;
+        }
+
+        .slide-technologies {
+            margin-top: 0.3rem;
+        }
+
+        @media(min-width: 768px) {
+            /* .slide-list {
+                flex-direction: row;
+            } */
+
+            .slide-list-item {
+                flex: 1;
+                border: 1px solid rgb(4, 112, 175);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="header-icon">
+            <img src="./images/ic_launcher.png" alt="">
+        </a>
+        <div class="header-nav">
+            <div class="header-nav-item"><a href="./apps.html">Apps</a></div>
+            <div class="header-nav-item"><a href="./bio.html">Bio</a></div>
+            <div class="header-nav-item"><a href="./slides.html">Slides</a></div>
+            <div class="header-nav-item"><a href="./schedule.html">Schedule</a></div>
+            <div class="header-nav-item"><a href="./request.html">Request</a></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="slide-list">
+            <div class="slide-list-item">
+                <div class="slide-title">de:code</div>
+                <div class="slide-url">
+                    <a href="http://xxx.com" target="_blank">
+                        http://xxx.com
+                    </a>
+                </div>
+                <div class="slide-description">xxx</div>
+                <div class="slide-technologies">
+                    Technologies: xxx
+                </div>
+            </div>
+            
+            <div class="slide-list-item">
+                <div class="slide-title">Flutter</div>
+                <div class="slide-url">
+                    <a href="http://xxx.com" target="_blank">
+                        http://xxx.com
+                    </a>
+                </div>
+                <div class="slide-description">Shibuya Volley</div>
+                <div class="slide-technologies">
+                    Technologies: xxx
+                </div>
+            </div>
+
+            <div class="slide-list-item">
+                <div class="slide-title">de:code</div>
+                <div class="slide-url">
+                    <a href="http://xxx.com" target="_blank">
+                        http://xxx.com
+                    </a>
+                </div>
+                <div class="slide-description">xxx</div>
+                <div class="slide-technologies">
+                    Technologies: xxx
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            App Lab &copy;
+        </div>
+    </footer>
+</body>
+
+</html>
