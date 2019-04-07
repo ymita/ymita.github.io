@@ -40,7 +40,7 @@ a {
 
 .header-nav-item a:hover {
     text-decoration: none;
-    color: #CA0020;
+    color: rgb(202, 0, 31);
 }
 
 body {
