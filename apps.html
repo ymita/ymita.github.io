@@ -19,6 +19,14 @@
             height: 8rem;
         }
 
+        .app-description {
+            margin-top: 1rem;
+        }
+
+        .app-technologies {
+            margin-top: 0.3rem;
+        }
+
         @media(min-width: 768px) {
             .app-list {
                 flex-direction: row;
@@ -34,7 +42,7 @@
 
 <body>
     <header class="header">
-     <a href="./index.html" class="header-icon">
+        <a href="./index.html" class="header-icon">
             <img src="./images/ic_launcher.png" alt="">
         </a>
         <div class="header-nav">
@@ -42,13 +50,22 @@
             <div class="header-nav-item"><a href="./bio.html">Bio</a></div>
             <div class="header-nav-item"><a href="./schedule.html">Schedule</a></div>
             <div class="header-nav-item"><a href="./request.html">Request</a></div>
-        </div>   
+        </div>
     </header>
 
     <main class="main">
         <div class="app-list">
             <div class="app-list-item">
-                App 1
+                <div class="app-title">Appellio</div>
+                <div class="app-url">
+                    <a href="http://appellio.azurewebsites.net" target="_blank">
+                        http://appellio.azurewebsites.net
+                    </a>
+                </div>
+                <div class="app-description">英語の例文を読み上げる学習アプリケーション</div>
+                <div class="app-technologies">
+                    Technologies: C#, ASP.NET Core MVC, JavaScript, CSS, SQL Server
+                </div>
             </div>
             <div class="app-list-item">
                 App 2
